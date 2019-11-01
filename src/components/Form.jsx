@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios'
 import {withRouter} from 'react-router-dom'
+import noImage from '../assets/noImage.png'
 
 class Form extends Component {
     constructor(props) {
@@ -84,6 +85,7 @@ class Form extends Component {
         return (
             <div>
                 <h1>Image URL</h1>
+                <img className='productImg' src={this.state.image ? this.state.image : noImage} alt="noImage default" />
                 <input 
                 onChange = {e => this.addImage(e.target.value)}
                 type="text"
