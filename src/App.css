@@ -20,3 +20,47 @@
 .App-link {
   color: #09d3ac;
 }
+
+.productImg {
+  width: 200px;
+  height: auto;
+  margin: 0px 20px;
+  margin-top: 40px;
+}
+
+.flexinInven {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+h4 {
+  width: 200px;
+  margin: auto;
+  padding: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+h3 {
+  background-color: palevioletred;
+  border-radius: 6px;
+  width: 160px;
+  height: 40px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(155, 0, 0);
+  align-items: center;
+}
+
+
