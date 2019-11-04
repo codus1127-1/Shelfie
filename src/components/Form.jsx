@@ -29,8 +29,8 @@ class Form extends Component {
         }
     }
 
-    componentDidUpdate(oldProps) {
-        if (this.props.match.path !== oldProps.match.path) {
+    componentDidUpdate(prevProps) {
+        if (this.props.match.path !== prevProps.match.path) {
             this.setState({
                 name: '',
                 price: 0,
@@ -83,28 +83,34 @@ class Form extends Component {
     
     render() {
         return (
-            <div>
-                <h1>Image URL</h1>
-                <img className='productImg' src={this.state.image ? this.state.image : noImage} alt="noImage default" />
-                <input 
-                onChange = {e => this.addImage(e.target.value)}
-                type="text"
-                value={this.state.image}/>
-                <h1>Product Name</h1>
-                <input 
-                onChange = {e => this.addName(e.target.value)}
-                type="text"
-                value={this.state.name}/>
-                <h1>Price</h1>
-                <input 
-                onChange = {e => this.addPrice(e.target.value)}
-                type="number"
-                value={this.state.price}/>
-                <button onClick={()=> this.cancelItem()} >Cancel</button>
-                {this.state.toggleEdit 
-                ? <button onClick={()=> this.handleEdit()}>Save Changes</button>
-                : <button onClick={()=> this.addProduct()}>Submit</button>
-                }
+            <div className='formContainer'>
+                <div className="imgDisplay">
+                    <img className='productImg' src={this.state.image ? this.state.image : noImage} alt="noImage default" />
+                </div>
+                <div className="form">
+                    <h1>Image URL</h1>
+                    <input 
+                    onChange = {e => this.addImage(e.target.value)}
+                    type="text"
+                    value={this.state.image}/>
+                    <h1>Product Name</h1>
+                    <input 
+                    onChange = {e => this.addName(e.target.value)}
+                    type="text"
+                    value={this.state.name}/>
+                    <h1>Price</h1>
+                    <input 
+                    onChange = {e => this.addPrice(e.target.value)}
+                    type="number"
+                    value={this.state.price}/>
+                </div>
+                <div className="buttonContainer">
+                    <button className='button' onClick={()=> this.cancelItem()} >Cancel</button>
+                    {this.state.toggleEdit 
+                    ? <button className='button' onClick={()=> this.handleEdit()}>Save Changes</button>
+                    : <button className='button' onClick={()=> this.addProduct()}>Submit</button>
+                    }
+                </div>
             </div>
         );
     }

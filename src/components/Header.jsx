@@ -3,9 +3,9 @@ import {Link} from 'react-router-dom'
 
 function Header() {
         return (
-            <div>
-                <header>
-                    <h1>SHELFIE</h1>
+            <div className='header'>
+                <header >
+                    <h2>SHELFIE</h2>
                     <Link to='/'>
                     <h3>Dashboard</h3>
                     </Link>

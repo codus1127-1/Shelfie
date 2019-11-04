@@ -32,7 +32,7 @@ module.exports = {
         const { params, body } = req;
 
         db.update_products(body.name, body.price, body.image, params.id)
-            .then(() => res.sendStatus(200))
+            .then((results) => res.sendStatus(200))
             .catch(err => {
                 res.status(500).send({ errorMessage: 'Oops, something went wrong' })
                 console.log(err)

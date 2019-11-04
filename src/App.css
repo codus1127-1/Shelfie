@@ -1,36 +1,20 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #09d3ac;
+  
 }
 
 .productImg {
-  width: 200px;
-  height: auto;
-  margin: 0px 20px;
-  margin-top: 40px;
+  display: relative;
+  width: auto;
+  height: 180px;
+  margin-top: 20px;
+  /* margin: auto; */
+  
 }
 
 .flexinInven {
-  display: flex;
-  flex-wrap: wrap;
+  /* display: flex;
+  flex-wrap: wrap; */
 }
 
 h4 {
@@ -47,7 +31,7 @@ a {
   display: flex;
 }
 h3 {
-  background-color: palevioletred;
+  background-color:#ed6b5a;
   border-radius: 6px;
   width: 160px;
   height: 40px;
@@ -59,8 +43,100 @@ h3 {
 header {
   display: flex;
   justify-content: space-around;
-  background-color: rgb(155, 0, 0);
   align-items: center;
+  width: 600px;
 }
 
+.header {
+  display: flex;
+  align-items: center;
+  background-color: #ab2a19;
+  height: 100px;
+}
 
+.formContainer {
+  width: 450px;
+  height: 500px;
+  background-color: #3ad886;
+  border-radius: 6px;
+  margin: auto;
+  text-align: left;
+  /* padding-left: 5px; */
+  margin-top: 40px;
+}
+
+.buttonContainer {
+  justify-content: space-around;
+  display: flex;
+  margin-top: 25px;
+}
+
+.button {
+  width: 130px;
+  height: 45px;
+  background-color: #d34735;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+input {
+  width: 426px;
+  height: 30px;
+}
+
+h1 {
+  font-size: 1rem;
+  margin-bottom: 0 !important;
+}
+
+.imgDisplay {
+  display: flex;
+  justify-content: center;
+}
+
+.form {
+  padding-left: 10px;
+}
+
+h2 {
+  color: white;
+  font-size: 2rem;
+}
+
+button {
+  width: 100px;
+  height: 35px;
+  background-color:  #3ad886;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  margin: 10px;
+}
+
+.inventoryItems {
+ width: 725px;
+ height: 220px;
+ display: flex;
+ background-color: #d34735;
+ margin: auto;
+ padding-left: 15px;
+ justify-content: space-around;
+ margin-top: 40px;
+ border-radius: 6px;
+ 
+
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.bContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 300px;
+}
